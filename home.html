@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Armour Homes</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Genos:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Genos:wght@100&family=Rampart+One&family=Stick+No+Bills&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Genos:wght@100&family=Raleway:wght@700&family=Rampart+One&family=Stick+No+Bills&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/240ae299b6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="home.html"><img src="Images/Armour.png" alt="Armour Homes"></a>
+                <a class="logoText" href="home.html">Armour Homes</a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">More</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="head">
+                <img src="Images/home.jpeg">
+                <div class="first">
+                    <h1>Welcome to Armour Homes</h1>
+                    <p>The city's first fully customizable home builder. The place where your creativiity becomes your home!</p>
+                </div>
+            </div>
+            
+            
+        </section>
+        <script>
+            
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu()
+            {
+                navLinks.style.right = "0"
+            }
+            function hideMenu()
+            {
+                navLinks.style.right = "-200px"
+            }
+
+        </script>
+    </body>
+</html>
