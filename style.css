@@ -70,7 +70,7 @@ nav img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     background-color: black;
     opacity: 1;
@@ -79,6 +79,7 @@ nav img {
 
 .head img {
     filter: brightness(70%);
+    max-width: 100%;
 }
 
 .head {
@@ -118,7 +119,7 @@ nav .fa-solid{
     display: none;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 950px) {
     .text-box h1 {
         font-family: 'Raleway', sans-serif;
         font-size: 20px;
@@ -142,7 +143,7 @@ nav .fa-solid{
         position: absolute;
         background: #1c4966;
         height: 100vh;
-        width: 200px;
+        max-width: 200px;
         top: 0;
         right: -200px;
         text-align: left;
@@ -180,8 +181,8 @@ nav .fa-solid{
     height: 50vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("Images/banner.jpeg");
-    background-position: top;
-    background-size: cover;
+    background-position: center;
+    background-size: 100%;
     text-align: center;
     color: white;
 }
@@ -198,7 +199,8 @@ nav .fa-solid{
 
 .second h1 {
     font-family: 'Raleway', sans-serif;
-    font-size: 62px;
+    font-size: 4em;
+    font-weight: bold;
 }
 
 .tile{
@@ -212,7 +214,74 @@ nav .fa-solid{
 .write{
     font-family: 'Raleway Dots', cursive;
     color: #282828;
+    height: 10vh;
     text-decoration-line: overline underline;
-    text-decoration-style:dashed;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 5%;
     font-size: 30px;
+}
+
+.products{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: #282828;
+    margin-top: 10px;
+    height: 40vh;
+    border: 1px solid #282828;
+    margin-bottom: 50px;
+}
+
+.product-row, .product-row-reverse{
+    flex: 1;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: row;
+}
+
+.product-row img, .product-row-reverse img{
+    position: relative;
+    margin-top: 0;
+    width: auto;
+    max-height: 100%;
+    align-self: center;
+    float: right;
+    object-fit: cover;
+}
+
+.product-row-reverse img{
+    float: left;
+}
+
+.product-row h1, .product-row-reverse h1{
+    margin-top: 10px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.product-row p, .product-row-reverse p{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#price h1, #price p{
+    padding-top: 70px;
+    display: inline-block;
+}
+
+#price p{
+    padding-left: 10px;
+}
+
+#note{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
 }
