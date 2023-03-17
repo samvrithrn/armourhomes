@@ -267,10 +267,6 @@ nav .fa-solid{
     object-fit: cover;
 }
 
-.product-row-reverse img{
-    float: left;
-}
-
 .product-row h1, .product-row-reverse h1{
     margin-top: 10px;
     font-family: 'Chakra Petch', sans-serif;
@@ -351,13 +347,133 @@ nav .fa-solid{
     }
 
     #note{
-        position: absolute;
-        bottom: 0;
-        left: 0;
+        display:block;
+        padding-top: 20px;
+        text-align: end;
         font-size: 7px;
+        position: relative;
     }
 }
 
+@media (min-width: 1100px) and (max-width: 1400px) 
+{
+    .sub-head{
+        position: relative;
+        display: inline-block;
+        height: 50vh;
+        width: 100vw;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("Images/banner.jpeg");
+        background-position: center;
+        background-size: 100%;
+        text-align: center;
+        color: white;
+    }
+    
+    .second {
+        width: 90%;
+        color: white;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, 65%);
+        text-align: center;
+    }
+    
+    .second h1 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 4em;
+        font-weight: bold;
+    }
+    
+    .tile{
+        margin-top: 10px;
+        width: 100%;
+        height: 40px;
+        background-color: white;
+        text-align: center;
+    }
+    
+    .write{
+        font-family: 'Raleway Dots', cursive;
+        color: #282828;
+        height: 10vh;
+        text-decoration-line: overline underline;
+        text-decoration-style: dashed;
+        text-decoration-thickness: 5%;
+        font-size: 30px;
+    }
+    
+    .products{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        background-color: #282828;
+        margin-top: 10px;
+        height: 40vh;
+        border: 1px solid #282828;
+        margin-bottom: 50px;
+    }
+    
+    .product-row, .product-row-reverse{
+        flex: 1;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        flex-direction: row;
+    }
+    
+    .product-row-reverse{
+        flex-direction: row-reverse;
+        background-color: #364C59;
+    }
+    
+    .product-row img, .product-row-reverse img{
+        position: relative;
+        margin-top: 0;
+        width: auto;
+        max-height: 100%;
+        align-self: center;
+        float: right;
+        object-fit: cover;
+    }
+    
+    .product-row-reverse img{
+        float: left;
+    }
+    
+    .product-row h1, .product-row-reverse h1{
+        margin-top: 10px;
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .product-row p, .product-row-reverse p{
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    
+    #price h1, #price p{
+        padding-top: 70px;
+        display: inline;
+    }
+    
+    #price p{
+        padding-left: 10px;
+    }
+    
+    #note{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 10px;
+    }   
+}
 /*--------Contact-------*/
 
 
